@@ -29,6 +29,7 @@ int main()
 >>>>>>> d9796db (Count array items with macro)
 
     printf("Array: ");
+<<<<<<< HEAD
     size_t i;
 <<<<<<< HEAD
     for (i = 0; i < 10; ++i) {
@@ -38,6 +39,17 @@ int main()
     for (i = 0; i < N_ELEMENTS(arr); ++i) {
 >>>>>>> d9796db (Count array items with macro)
         printf("%d ", arr[i]);
+||||||| parent of 330f3ad (Separate elements with comma)
+    size_t i;
+    for (i = 0; i < N_ELEMENTS(arr); ++i) {
+        printf("%d ", arr[i]);
+=======
+    size_t i = 0;
+    printf("%d", arr[i]);
+    ++i;
+    for (; i < N_ELEMENTS(arr); ++i) {
+        printf(", %d", arr[i]);
+>>>>>>> 330f3ad (Separate elements with comma)
     }
     printf("\n");
 
